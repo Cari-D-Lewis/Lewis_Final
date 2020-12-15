@@ -1,0 +1,1641 @@
+{
+  "type" : "CIMLayerDocument",
+  "version" : "2.6.0",
+  "build" : 24783,
+  "layers" : [
+    "CIMPATH=map/2020_usa_median_household_income.xml"
+  ],
+  "layerDefinitions" : [
+    {
+      "type" : "CIMDynamicServiceLayer",
+      "name" : "2020 USA Median Household Income",
+      "uRI" : "CIMPATH=map/2020_usa_median_household_income.xml",
+      "sourceURI" : "20a60423d37c49ba9253526859ba93e1",
+      "sourceModifiedTime" : {
+        "type" : "TimeInstant"
+      },
+      "useSourceMetadata" : true,
+      "description" : "USA_Demographics_and_Boundaries_2020",
+      "layerElevation" : {
+        "type" : "CIMLayerElevationSurface",
+        "mapElevationID" : "{2B46BDD4-0C18-4370-9EB5-8D302032F2CF}"
+      },
+      "expanded" : true,
+      "layerType" : "Operational",
+      "showLegends" : true,
+      "visibility" : true,
+      "displayCacheType" : "None",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "serviceConnection" : {
+        "type" : "CIMAGSServiceConnection",
+        "objectName" : "USA_Demographics_and_Boundaries_2020",
+        "objectType" : "MapServer",
+        "url" : "https://demographics5.arcgis.com/arcgis/rest/services/USA_Demographics_and_Boundaries_2020/MapServer",
+        "serverConnection" : {
+          "type" : "CIMInternetServerConnection",
+          "anonymous" : true,
+          "hideUserProperty" : true,
+          "url" : "https://demographics5.arcgis.com/arcgis/services"
+        }
+      },
+      "subLayers" : [
+        {
+          "type" : "CIMDynamicServiceSubLayer",
+          "minScale" : 19000000,
+          "name" : "State Boundaries",
+          "showLegends" : true,
+          "subLayerID" : "0",
+          "visibility" : true,
+          "serviceLayerID" : -1,
+          "timeOffsetUnits" : "esriTimeUnitsUnknown",
+          "layerDefinition" : "{\"id\":1000,\"source\":{\"mapLayerId\":0,\"type\":\"mapLayer\"},\"drawingInfo\":{\"renderer\":{\"symbol\":{\"color\":[255,255,255,0],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[160,160,160,150],\"width\":1.2,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"type\":\"simple\"}},\"clientSubLayerId\":0,\"parentLayerId\":-1}",
+          "showPopups" : true
+        },
+        {
+          "type" : "CIMDynamicServiceSubLayer",
+          "minScale" : 2000000,
+          "name" : "County Boundaries",
+          "showLegends" : true,
+          "subLayerID" : "1",
+          "visibility" : true,
+          "serviceLayerID" : -1,
+          "timeOffsetUnits" : "esriTimeUnitsUnknown",
+          "layerDefinition" : "{\"id\":1001,\"source\":{\"mapLayerId\":1,\"type\":\"mapLayer\"},\"drawingInfo\":{\"renderer\":{\"symbol\":{\"color\":[255,255,255,0],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[190,190,190,150],\"width\":1.2,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"type\":\"simple\"}},\"clientSubLayerId\":1,\"parentLayerId\":-1}",
+          "showPopups" : true
+        },
+        {
+          "type" : "CIMDynamicServiceSubLayer",
+          "maxScale" : 150000001,
+          "name" : "Country",
+          "showLegends" : true,
+          "subLayerID" : "42",
+          "visibility" : true,
+          "serviceLayerID" : -1,
+          "timeOffsetUnits" : "esriTimeUnitsUnknown",
+          "layerDefinition" : "{\"id\":1002,\"source\":{\"mapLayerId\":42,\"type\":\"mapLayer\"},\"drawingInfo\":{\"renderer\":{\"field\":\"MEDHINC_CY\",\"minValue\":0,\"classBreakInfos\":[{\"classMaxValue\":12400,\"symbol\":{\"color\":[59,97,66,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$0 - 12,400\"},{\"classMaxValue\":48600,\"symbol\":{\"color\":[176,217,184,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$12,400 - 48,600\"},{\"classMaxValue\":84800,\"symbol\":{\"color\":[250,250,250,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$48,600 - 84,800\"},{\"classMaxValue\":121000,\"symbol\":{\"color\":[162,177,191,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$84,800 - 121,000\"},{\"classMaxValue\":200100,\"symbol\":{\"color\":[26,74,120,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$121,000 - 200,100\"}],\"type\":\"classBreaks\",\"classificationMethod\":\"esriClassifyStandardDeviation\"}},\"clientSubLayerId\":2,\"parentLayerId\":-1}",
+          "popupInfo" : {
+            "type" : "CIMPopupInfo",
+            "title" : "{NAME}",
+            "mediaInfos" : [
+              {
+                "type" : "CIMTextMediaInfo",
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "text" : "The national median household income is\u00A0<b><font color='#006400'>${MEDHINC_CY}</font></b>."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 1,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "MEDIA15_CY",
+                  "MEDIA25_CY",
+                  "MEDIA35_CY",
+                  "MEDIA45_CY",
+                  "MEDIA55_CY",
+                  "MEDIA65_CY",
+                  "MEDIA75_CY"
+                ],
+                "caption" : "Income varies by age. Hover or click chart to view median household income by age of householder."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 2,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A15I0_CY",
+                  "A15I15_CY",
+                  "A15I25_CY",
+                  "A15I35_CY",
+                  "A15I50_CY",
+                  "A15I75_CY",
+                  "A15I100_CY",
+                  "A15I150_CY",
+                  "A15I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 15 to 24)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 3,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A25I0_CY",
+                  "A25I15_CY",
+                  "A25I25_CY",
+                  "A25I35_CY",
+                  "A25I50_CY",
+                  "A25I75_CY",
+                  "A25I100_CY",
+                  "A25I150_CY",
+                  "A25I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 25 to 34)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 4,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A35I15_CY",
+                  "A35I25_CY",
+                  "A35I35_CY",
+                  "A35I50_CY",
+                  "A35I75_CY",
+                  "A35I100_CY",
+                  "A35I150_CY",
+                  "A35I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 35 to 44)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 5,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A45I0_CY",
+                  "A45I15_CY",
+                  "A45I25_CY",
+                  "A45I35_CY",
+                  "A45I50_CY",
+                  "A45I75_CY",
+                  "A45I100_CY",
+                  "A45I150_CY",
+                  "A45I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age of 45 to 54)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 6,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A55I0_CY",
+                  "A55I15_CY",
+                  "A55I25_CY",
+                  "A55I35_CY",
+                  "A55I50_CY",
+                  "A55I75_CY",
+                  "A55I100_CY",
+                  "A55I150_CY",
+                  "A55I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 55 to 64)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 7,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A65I0_CY",
+                  "A65I15_CY",
+                  "A65I25_CY",
+                  "A65I35_CY",
+                  "A65I50_CY",
+                  "A65I75_CY",
+                  "A65I100_CY",
+                  "A65I150_CY",
+                  "A65I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age of 65 to 74)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 8,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A75I0_CY",
+                  "A75I15_CY",
+                  "A75I25_CY",
+                  "A75I35_CY",
+                  "A75I50_CY",
+                  "A75I75_CY",
+                  "A75I100_CY",
+                  "A75I150_CY",
+                  "A75I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 75 plus)."
+              }
+            ],
+            "gridLayout" : {
+              "type" : "CIMPopupLayout",
+              "columnWidths" : [
+                100
+              ],
+              "borderWidth" : 0,
+              "borderColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  0,
+                  0,
+                  0,
+                  100
+                ]
+              }
+            }
+          },
+          "showPopups" : true
+        },
+        {
+          "type" : "CIMDynamicServiceSubLayer",
+          "maxScale" : 19000001,
+          "minScale" : 150000000,
+          "name" : "State",
+          "showLegends" : true,
+          "subLayerID" : "43",
+          "visibility" : true,
+          "serviceLayerID" : -1,
+          "timeOffsetUnits" : "esriTimeUnitsUnknown",
+          "layerDefinition" : "{\"id\":1003,\"source\":{\"mapLayerId\":43,\"type\":\"mapLayer\"},\"drawingInfo\":{\"renderer\":{\"field\":\"MEDHINC_CY\",\"minValue\":0,\"classBreakInfos\":[{\"classMaxValue\":12400,\"symbol\":{\"color\":[59,97,66,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$0 - 12,400\"},{\"classMaxValue\":48600,\"symbol\":{\"color\":[176,217,184,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$12,400 - 48,600\"},{\"classMaxValue\":84800,\"symbol\":{\"color\":[250,250,250,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$48,600 - 84,800\"},{\"classMaxValue\":121000,\"symbol\":{\"color\":[162,177,191,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$84,800 - 121,000\"},{\"classMaxValue\":200100,\"symbol\":{\"color\":[26,74,120,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$121,000 - 200,100\"}],\"type\":\"classBreaks\",\"classificationMethod\":\"esriClassifyStandardDeviation\"}},\"clientSubLayerId\":3,\"parentLayerId\":-1}",
+          "popupInfo" : {
+            "type" : "CIMPopupInfo",
+            "title" : "{NAME}",
+            "mediaInfos" : [
+              {
+                "type" : "CIMTextMediaInfo",
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "text" : "The median household income here is\u00A0<b><font color='#006400'>${MEDHINC_CY}</font></b>. In comparison, the national median household income is $62,203."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 1,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "MEDIA15_CY",
+                  "MEDIA25_CY",
+                  "MEDIA35_CY",
+                  "MEDIA45_CY",
+                  "MEDIA55_CY",
+                  "MEDIA65_CY",
+                  "MEDIA75_CY"
+                ],
+                "caption" : "Income varies by age. Hover or click chart to view median household income by age of householder."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 2,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A15I0_CY",
+                  "A15I15_CY",
+                  "A15I25_CY",
+                  "A15I35_CY",
+                  "A15I50_CY",
+                  "A15I75_CY",
+                  "A15I100_CY",
+                  "A15I150_CY",
+                  "A15I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 15 to 24)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 3,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A25I0_CY",
+                  "A25I15_CY",
+                  "A25I25_CY",
+                  "A25I35_CY",
+                  "A25I50_CY",
+                  "A25I75_CY",
+                  "A25I100_CY",
+                  "A25I150_CY",
+                  "A25I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 25 to 34)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 4,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A35I15_CY",
+                  "A35I25_CY",
+                  "A35I35_CY",
+                  "A35I50_CY",
+                  "A35I75_CY",
+                  "A35I100_CY",
+                  "A35I150_CY",
+                  "A35I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 35 to 44)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 5,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A45I0_CY",
+                  "A45I15_CY",
+                  "A45I25_CY",
+                  "A45I35_CY",
+                  "A45I50_CY",
+                  "A45I75_CY",
+                  "A45I100_CY",
+                  "A45I150_CY",
+                  "A45I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age of 45 to 54)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 6,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A55I0_CY",
+                  "A55I15_CY",
+                  "A55I25_CY",
+                  "A55I35_CY",
+                  "A55I50_CY",
+                  "A55I75_CY",
+                  "A55I100_CY",
+                  "A55I150_CY",
+                  "A55I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 55 to 64)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 7,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A65I0_CY",
+                  "A65I15_CY",
+                  "A65I25_CY",
+                  "A65I35_CY",
+                  "A65I50_CY",
+                  "A65I75_CY",
+                  "A65I100_CY",
+                  "A65I150_CY",
+                  "A65I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age of 65 to 74)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 8,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A75I0_CY",
+                  "A75I15_CY",
+                  "A75I25_CY",
+                  "A75I35_CY",
+                  "A75I50_CY",
+                  "A75I75_CY",
+                  "A75I100_CY",
+                  "A75I150_CY",
+                  "A75I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 75 plus)."
+              }
+            ],
+            "gridLayout" : {
+              "type" : "CIMPopupLayout",
+              "columnWidths" : [
+                100
+              ],
+              "borderWidth" : 0,
+              "borderColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  0,
+                  0,
+                  0,
+                  100
+                ]
+              }
+            }
+          },
+          "showPopups" : true
+        },
+        {
+          "type" : "CIMDynamicServiceSubLayer",
+          "maxScale" : 10000001,
+          "minScale" : 19000000,
+          "name" : "County",
+          "showLegends" : true,
+          "subLayerID" : "44",
+          "visibility" : true,
+          "serviceLayerID" : -1,
+          "timeOffsetUnits" : "esriTimeUnitsUnknown",
+          "layerDefinition" : "{\"id\":1004,\"source\":{\"mapLayerId\":44,\"type\":\"mapLayer\"},\"drawingInfo\":{\"renderer\":{\"field\":\"MEDHINC_CY\",\"minValue\":0,\"classBreakInfos\":[{\"classMaxValue\":12400,\"symbol\":{\"color\":[59,97,66,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$0 - 12,400\"},{\"classMaxValue\":48600,\"symbol\":{\"color\":[176,217,184,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$12,400 - 48,600\"},{\"classMaxValue\":84800,\"symbol\":{\"color\":[250,250,250,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$48,600 - 84,800\"},{\"classMaxValue\":121000,\"symbol\":{\"color\":[162,177,191,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$84,800 - 121,000\"},{\"classMaxValue\":200100,\"symbol\":{\"color\":[26,74,120,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$121,000 - 200,100\"}],\"type\":\"classBreaks\",\"classificationMethod\":\"esriClassifyStandardDeviation\"}},\"clientSubLayerId\":4,\"parentLayerId\":-1}",
+          "popupInfo" : {
+            "type" : "CIMPopupInfo",
+            "title" : "{NAME}",
+            "mediaInfos" : [
+              {
+                "type" : "CIMTextMediaInfo",
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "text" : "The median household income here is\u00A0<b><font color='#006400'>${MEDHINC_CY}</font></b>. In comparison, the national median household income is $62,203."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 1,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "MEDIA15_CY",
+                  "MEDIA25_CY",
+                  "MEDIA35_CY",
+                  "MEDIA45_CY",
+                  "MEDIA55_CY",
+                  "MEDIA65_CY",
+                  "MEDIA75_CY"
+                ],
+                "caption" : "Income varies by age. Hover or click chart to view median household income by age of householder."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 2,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A15I0_CY",
+                  "A15I15_CY",
+                  "A15I25_CY",
+                  "A15I35_CY",
+                  "A15I50_CY",
+                  "A15I75_CY",
+                  "A15I100_CY",
+                  "A15I150_CY",
+                  "A15I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 15 to 24)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 3,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A25I0_CY",
+                  "A25I15_CY",
+                  "A25I25_CY",
+                  "A25I35_CY",
+                  "A25I50_CY",
+                  "A25I75_CY",
+                  "A25I100_CY",
+                  "A25I150_CY",
+                  "A25I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 25 to 34)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 4,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A35I15_CY",
+                  "A35I25_CY",
+                  "A35I35_CY",
+                  "A35I50_CY",
+                  "A35I75_CY",
+                  "A35I100_CY",
+                  "A35I150_CY",
+                  "A35I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 35 to 44)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 5,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A45I0_CY",
+                  "A45I15_CY",
+                  "A45I25_CY",
+                  "A45I35_CY",
+                  "A45I50_CY",
+                  "A45I75_CY",
+                  "A45I100_CY",
+                  "A45I150_CY",
+                  "A45I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age of 45 to 54)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 6,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A55I0_CY",
+                  "A55I15_CY",
+                  "A55I25_CY",
+                  "A55I35_CY",
+                  "A55I50_CY",
+                  "A55I75_CY",
+                  "A55I100_CY",
+                  "A55I150_CY",
+                  "A55I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 55 to 64)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 7,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A65I0_CY",
+                  "A65I15_CY",
+                  "A65I25_CY",
+                  "A65I35_CY",
+                  "A65I50_CY",
+                  "A65I75_CY",
+                  "A65I100_CY",
+                  "A65I150_CY",
+                  "A65I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age of 65 to 74)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 8,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A75I0_CY",
+                  "A75I15_CY",
+                  "A75I25_CY",
+                  "A75I35_CY",
+                  "A75I50_CY",
+                  "A75I75_CY",
+                  "A75I100_CY",
+                  "A75I150_CY",
+                  "A75I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 75 plus)."
+              }
+            ],
+            "gridLayout" : {
+              "type" : "CIMPopupLayout",
+              "columnWidths" : [
+                100
+              ],
+              "borderWidth" : 0,
+              "borderColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  0,
+                  0,
+                  0,
+                  100
+                ]
+              }
+            }
+          },
+          "showPopups" : true
+        },
+        {
+          "type" : "CIMDynamicServiceSubLayer",
+          "maxScale" : 3000001,
+          "minScale" : 10000000,
+          "name" : "County",
+          "showLegends" : true,
+          "subLayerID" : "45",
+          "visibility" : true,
+          "serviceLayerID" : -1,
+          "timeOffsetUnits" : "esriTimeUnitsUnknown",
+          "layerDefinition" : "{\"id\":1005,\"source\":{\"mapLayerId\":45,\"type\":\"mapLayer\"},\"drawingInfo\":{\"renderer\":{\"field\":\"MEDHINC_CY\",\"minValue\":0,\"classBreakInfos\":[{\"classMaxValue\":12400,\"symbol\":{\"color\":[59,97,66,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$0 - 12,400\"},{\"classMaxValue\":48600,\"symbol\":{\"color\":[176,217,184,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$12,400 - 48,600\"},{\"classMaxValue\":84800,\"symbol\":{\"color\":[250,250,250,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$48,600 - 84,800\"},{\"classMaxValue\":121000,\"symbol\":{\"color\":[162,177,191,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$84,800 - 121,000\"},{\"classMaxValue\":200100,\"symbol\":{\"color\":[26,74,120,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$121,000 - 200,100\"}],\"type\":\"classBreaks\",\"classificationMethod\":\"esriClassifyStandardDeviation\"}},\"clientSubLayerId\":5,\"parentLayerId\":-1}",
+          "popupInfo" : {
+            "type" : "CIMPopupInfo",
+            "title" : "{NAME}",
+            "mediaInfos" : [
+              {
+                "type" : "CIMTextMediaInfo",
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "text" : "The median household income here is\u00A0<b><font color='#006400'>${MEDHINC_CY}</font></b>. In comparison, the national median household income is $62,203."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 1,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "MEDIA15_CY",
+                  "MEDIA25_CY",
+                  "MEDIA35_CY",
+                  "MEDIA45_CY",
+                  "MEDIA55_CY",
+                  "MEDIA65_CY",
+                  "MEDIA75_CY"
+                ],
+                "caption" : "Income varies by age. Hover or click chart to view median household income by age of householder."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 2,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A15I0_CY",
+                  "A15I15_CY",
+                  "A15I25_CY",
+                  "A15I35_CY",
+                  "A15I50_CY",
+                  "A15I75_CY",
+                  "A15I100_CY",
+                  "A15I150_CY",
+                  "A15I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 15 to 24)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 3,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A25I0_CY",
+                  "A25I15_CY",
+                  "A25I25_CY",
+                  "A25I35_CY",
+                  "A25I50_CY",
+                  "A25I75_CY",
+                  "A25I100_CY",
+                  "A25I150_CY",
+                  "A25I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 25 to 34)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 4,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A35I15_CY",
+                  "A35I25_CY",
+                  "A35I35_CY",
+                  "A35I50_CY",
+                  "A35I75_CY",
+                  "A35I100_CY",
+                  "A35I150_CY",
+                  "A35I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 35 to 44)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 5,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A45I0_CY",
+                  "A45I15_CY",
+                  "A45I25_CY",
+                  "A45I35_CY",
+                  "A45I50_CY",
+                  "A45I75_CY",
+                  "A45I100_CY",
+                  "A45I150_CY",
+                  "A45I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age of 45 to 54)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 6,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A55I0_CY",
+                  "A55I15_CY",
+                  "A55I25_CY",
+                  "A55I35_CY",
+                  "A55I50_CY",
+                  "A55I75_CY",
+                  "A55I100_CY",
+                  "A55I150_CY",
+                  "A55I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 55 to 64)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 7,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A65I0_CY",
+                  "A65I15_CY",
+                  "A65I25_CY",
+                  "A65I35_CY",
+                  "A65I50_CY",
+                  "A65I75_CY",
+                  "A65I100_CY",
+                  "A65I150_CY",
+                  "A65I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age of 65 to 74)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 8,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A75I0_CY",
+                  "A75I15_CY",
+                  "A75I25_CY",
+                  "A75I35_CY",
+                  "A75I50_CY",
+                  "A75I75_CY",
+                  "A75I100_CY",
+                  "A75I150_CY",
+                  "A75I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 75 plus)."
+              }
+            ],
+            "gridLayout" : {
+              "type" : "CIMPopupLayout",
+              "columnWidths" : [
+                100
+              ],
+              "borderWidth" : 0,
+              "borderColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  0,
+                  0,
+                  0,
+                  100
+                ]
+              }
+            }
+          },
+          "showPopups" : true
+        },
+        {
+          "type" : "CIMDynamicServiceSubLayer",
+          "maxScale" : 2000001,
+          "minScale" : 3000000,
+          "name" : "County",
+          "showLegends" : true,
+          "subLayerID" : "46",
+          "visibility" : true,
+          "serviceLayerID" : -1,
+          "timeOffsetUnits" : "esriTimeUnitsUnknown",
+          "layerDefinition" : "{\"id\":1006,\"source\":{\"mapLayerId\":46,\"type\":\"mapLayer\"},\"drawingInfo\":{\"renderer\":{\"field\":\"MEDHINC_CY\",\"minValue\":0,\"classBreakInfos\":[{\"classMaxValue\":12400,\"symbol\":{\"color\":[59,97,66,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$0 - 12,400\"},{\"classMaxValue\":48600,\"symbol\":{\"color\":[176,217,184,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$12,400 - 48,600\"},{\"classMaxValue\":84800,\"symbol\":{\"color\":[250,250,250,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$48,600 - 84,800\"},{\"classMaxValue\":121000,\"symbol\":{\"color\":[162,177,191,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$84,800 - 121,000\"},{\"classMaxValue\":200100,\"symbol\":{\"color\":[26,74,120,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$121,000 - 200,100\"}],\"type\":\"classBreaks\",\"classificationMethod\":\"esriClassifyStandardDeviation\"}},\"clientSubLayerId\":6,\"parentLayerId\":-1}",
+          "popupInfo" : {
+            "type" : "CIMPopupInfo",
+            "title" : "{NAME}",
+            "mediaInfos" : [
+              {
+                "type" : "CIMTextMediaInfo",
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "text" : "The median household income here is\u00A0<b><font color='#006400'>${MEDHINC_CY}</font></b>. In comparison, the national median household income is $62,203."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 1,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "MEDIA15_CY",
+                  "MEDIA25_CY",
+                  "MEDIA35_CY",
+                  "MEDIA45_CY",
+                  "MEDIA55_CY",
+                  "MEDIA65_CY",
+                  "MEDIA75_CY"
+                ],
+                "caption" : "Income varies by age. Hover or click chart to view median household income by age of householder."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 2,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A15I0_CY",
+                  "A15I15_CY",
+                  "A15I25_CY",
+                  "A15I35_CY",
+                  "A15I50_CY",
+                  "A15I75_CY",
+                  "A15I100_CY",
+                  "A15I150_CY",
+                  "A15I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 15 to 24)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 3,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A25I0_CY",
+                  "A25I15_CY",
+                  "A25I25_CY",
+                  "A25I35_CY",
+                  "A25I50_CY",
+                  "A25I75_CY",
+                  "A25I100_CY",
+                  "A25I150_CY",
+                  "A25I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 25 to 34)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 4,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A35I15_CY",
+                  "A35I25_CY",
+                  "A35I35_CY",
+                  "A35I50_CY",
+                  "A35I75_CY",
+                  "A35I100_CY",
+                  "A35I150_CY",
+                  "A35I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 35 to 44)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 5,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A45I0_CY",
+                  "A45I15_CY",
+                  "A45I25_CY",
+                  "A45I35_CY",
+                  "A45I50_CY",
+                  "A45I75_CY",
+                  "A45I100_CY",
+                  "A45I150_CY",
+                  "A45I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age of 45 to 54)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 6,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A55I0_CY",
+                  "A55I15_CY",
+                  "A55I25_CY",
+                  "A55I35_CY",
+                  "A55I50_CY",
+                  "A55I75_CY",
+                  "A55I100_CY",
+                  "A55I150_CY",
+                  "A55I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 55 to 64)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 7,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A65I0_CY",
+                  "A65I15_CY",
+                  "A65I25_CY",
+                  "A65I35_CY",
+                  "A65I50_CY",
+                  "A65I75_CY",
+                  "A65I100_CY",
+                  "A65I150_CY",
+                  "A65I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age of 65 to 74)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 8,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A75I0_CY",
+                  "A75I15_CY",
+                  "A75I25_CY",
+                  "A75I35_CY",
+                  "A75I50_CY",
+                  "A75I75_CY",
+                  "A75I100_CY",
+                  "A75I150_CY",
+                  "A75I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 75 plus)."
+              }
+            ],
+            "gridLayout" : {
+              "type" : "CIMPopupLayout",
+              "columnWidths" : [
+                100
+              ],
+              "borderWidth" : 0,
+              "borderColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  0,
+                  0,
+                  0,
+                  100
+                ]
+              }
+            }
+          },
+          "showPopups" : true
+        },
+        {
+          "type" : "CIMDynamicServiceSubLayer",
+          "maxScale" : 300001,
+          "minScale" : 2000000,
+          "name" : "ZIP Code",
+          "showLegends" : true,
+          "subLayerID" : "47",
+          "visibility" : true,
+          "serviceLayerID" : -1,
+          "timeOffsetUnits" : "esriTimeUnitsUnknown",
+          "layerDefinition" : "{\"id\":1007,\"source\":{\"mapLayerId\":47,\"type\":\"mapLayer\"},\"drawingInfo\":{\"renderer\":{\"field\":\"MEDHINC_CY\",\"minValue\":0,\"classBreakInfos\":[{\"classMaxValue\":12400,\"symbol\":{\"color\":[59,97,66,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$0 - 12,400\"},{\"classMaxValue\":48600,\"symbol\":{\"color\":[176,217,184,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$12,400 - 48,600\"},{\"classMaxValue\":84800,\"symbol\":{\"color\":[250,250,250,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$48,600 - 84,800\"},{\"classMaxValue\":121000,\"symbol\":{\"color\":[162,177,191,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$84,800 - 121,000\"},{\"classMaxValue\":200100,\"symbol\":{\"color\":[26,74,120,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$121,000 - 200,100\"}],\"type\":\"classBreaks\",\"classificationMethod\":\"esriClassifyStandardDeviation\"}},\"clientSubLayerId\":7,\"parentLayerId\":-1}",
+          "popupInfo" : {
+            "type" : "CIMPopupInfo",
+            "title" : "{ID} - {NAME}",
+            "mediaInfos" : [
+              {
+                "type" : "CIMTextMediaInfo",
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "text" : "The median household income here is\u00A0<b><font color='#006400'>${MEDHINC_CY}</font></b>. In comparison, the national median household income is $62,203."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 1,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "MEDIA15_CY",
+                  "MEDIA25_CY",
+                  "MEDIA35_CY",
+                  "MEDIA45_CY",
+                  "MEDIA55_CY",
+                  "MEDIA65_CY",
+                  "MEDIA75_CY"
+                ],
+                "caption" : "Income varies by age. Hover or click chart to view median household income by age of householder."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 2,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A15I0_CY",
+                  "A15I15_CY",
+                  "A15I25_CY",
+                  "A15I35_CY",
+                  "A15I50_CY",
+                  "A15I75_CY",
+                  "A15I100_CY",
+                  "A15I150_CY",
+                  "A15I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 15 to 24)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 3,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A25I0_CY",
+                  "A25I15_CY",
+                  "A25I25_CY",
+                  "A25I35_CY",
+                  "A25I50_CY",
+                  "A25I75_CY",
+                  "A25I100_CY",
+                  "A25I150_CY",
+                  "A25I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 25 to 34)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 4,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A35I15_CY",
+                  "A35I25_CY",
+                  "A35I35_CY",
+                  "A35I50_CY",
+                  "A35I75_CY",
+                  "A35I100_CY",
+                  "A35I150_CY",
+                  "A35I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 35 to 44)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 5,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A45I0_CY",
+                  "A45I15_CY",
+                  "A45I25_CY",
+                  "A45I35_CY",
+                  "A45I50_CY",
+                  "A45I75_CY",
+                  "A45I100_CY",
+                  "A45I150_CY",
+                  "A45I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age of 45 to 54)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 6,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A55I0_CY",
+                  "A55I15_CY",
+                  "A55I25_CY",
+                  "A55I35_CY",
+                  "A55I50_CY",
+                  "A55I75_CY",
+                  "A55I100_CY",
+                  "A55I150_CY",
+                  "A55I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 55 to 64)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 7,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A65I0_CY",
+                  "A65I15_CY",
+                  "A65I25_CY",
+                  "A65I35_CY",
+                  "A65I50_CY",
+                  "A65I75_CY",
+                  "A65I100_CY",
+                  "A65I150_CY",
+                  "A65I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age of 65 to 74)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 8,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A75I0_CY",
+                  "A75I15_CY",
+                  "A75I25_CY",
+                  "A75I35_CY",
+                  "A75I50_CY",
+                  "A75I75_CY",
+                  "A75I100_CY",
+                  "A75I150_CY",
+                  "A75I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 75 plus)."
+              }
+            ],
+            "gridLayout" : {
+              "type" : "CIMPopupLayout",
+              "columnWidths" : [
+                100
+              ],
+              "borderWidth" : 0,
+              "borderColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  0,
+                  0,
+                  0,
+                  100
+                ]
+              }
+            }
+          },
+          "showPopups" : true
+        },
+        {
+          "type" : "CIMDynamicServiceSubLayer",
+          "maxScale" : 80001,
+          "minScale" : 300000,
+          "name" : "Tract",
+          "showLegends" : true,
+          "subLayerID" : "48",
+          "visibility" : true,
+          "serviceLayerID" : -1,
+          "timeOffsetUnits" : "esriTimeUnitsUnknown",
+          "layerDefinition" : "{\"id\":1008,\"source\":{\"mapLayerId\":48,\"type\":\"mapLayer\"},\"drawingInfo\":{\"renderer\":{\"field\":\"MEDHINC_CY\",\"minValue\":0,\"classBreakInfos\":[{\"classMaxValue\":12400,\"symbol\":{\"color\":[59,97,66,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$0 - 12,400\"},{\"classMaxValue\":48600,\"symbol\":{\"color\":[176,217,184,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$12,400 - 48,600\"},{\"classMaxValue\":84800,\"symbol\":{\"color\":[250,250,250,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$48,600 - 84,800\"},{\"classMaxValue\":121000,\"symbol\":{\"color\":[162,177,191,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$84,800 - 121,000\"},{\"classMaxValue\":200100,\"symbol\":{\"color\":[26,74,120,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$121,000 - 200,100\"}],\"type\":\"classBreaks\",\"classificationMethod\":\"esriClassifyStandardDeviation\"}},\"clientSubLayerId\":8,\"parentLayerId\":-1}",
+          "popupInfo" : {
+            "type" : "CIMPopupInfo",
+            "title" : "{ST_ABBREV} Tract {ID}",
+            "mediaInfos" : [
+              {
+                "type" : "CIMTextMediaInfo",
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "text" : "The median household income here is\u00A0<b><font color='#006400'>${MEDHINC_CY}</font></b>. In comparison, the national median household income is $62,203."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 1,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "MEDIA15_CY",
+                  "MEDIA25_CY",
+                  "MEDIA35_CY",
+                  "MEDIA45_CY",
+                  "MEDIA55_CY",
+                  "MEDIA65_CY",
+                  "MEDIA75_CY"
+                ],
+                "caption" : "Income varies by age. Hover or click chart to view median household income by age of householder."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 2,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A15I0_CY",
+                  "A15I15_CY",
+                  "A15I25_CY",
+                  "A15I35_CY",
+                  "A15I50_CY",
+                  "A15I75_CY",
+                  "A15I100_CY",
+                  "A15I150_CY",
+                  "A15I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 15 to 24)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 3,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A25I0_CY",
+                  "A25I15_CY",
+                  "A25I25_CY",
+                  "A25I35_CY",
+                  "A25I50_CY",
+                  "A25I75_CY",
+                  "A25I100_CY",
+                  "A25I150_CY",
+                  "A25I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 25 to 34)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 4,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A35I15_CY",
+                  "A35I25_CY",
+                  "A35I35_CY",
+                  "A35I50_CY",
+                  "A35I75_CY",
+                  "A35I100_CY",
+                  "A35I150_CY",
+                  "A35I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 35 to 44)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 5,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A45I0_CY",
+                  "A45I15_CY",
+                  "A45I25_CY",
+                  "A45I35_CY",
+                  "A45I50_CY",
+                  "A45I75_CY",
+                  "A45I100_CY",
+                  "A45I150_CY",
+                  "A45I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age of 45 to 54)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 6,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A55I0_CY",
+                  "A55I15_CY",
+                  "A55I25_CY",
+                  "A55I35_CY",
+                  "A55I50_CY",
+                  "A55I75_CY",
+                  "A55I100_CY",
+                  "A55I150_CY",
+                  "A55I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 55 to 64)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 7,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A65I0_CY",
+                  "A65I15_CY",
+                  "A65I25_CY",
+                  "A65I35_CY",
+                  "A65I50_CY",
+                  "A65I75_CY",
+                  "A65I100_CY",
+                  "A65I150_CY",
+                  "A65I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age of 65 to 74)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 8,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A75I0_CY",
+                  "A75I15_CY",
+                  "A75I25_CY",
+                  "A75I35_CY",
+                  "A75I50_CY",
+                  "A75I75_CY",
+                  "A75I100_CY",
+                  "A75I150_CY",
+                  "A75I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 75 plus)."
+              }
+            ],
+            "gridLayout" : {
+              "type" : "CIMPopupLayout",
+              "columnWidths" : [
+                100
+              ],
+              "borderWidth" : 0,
+              "borderColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  0,
+                  0,
+                  0,
+                  100
+                ]
+              }
+            }
+          },
+          "showPopups" : true
+        },
+        {
+          "type" : "CIMDynamicServiceSubLayer",
+          "minScale" : 80000,
+          "name" : "Block Group",
+          "showLegends" : true,
+          "subLayerID" : "49",
+          "visibility" : true,
+          "serviceLayerID" : -1,
+          "timeOffsetUnits" : "esriTimeUnitsUnknown",
+          "layerDefinition" : "{\"id\":1009,\"source\":{\"mapLayerId\":49,\"type\":\"mapLayer\"},\"drawingInfo\":{\"renderer\":{\"field\":\"MEDHINC_CY\",\"minValue\":0,\"classBreakInfos\":[{\"classMaxValue\":12400,\"symbol\":{\"color\":[59,97,66,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$0 - 12,400\"},{\"classMaxValue\":48600,\"symbol\":{\"color\":[176,217,184,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$12,400 - 48,600\"},{\"classMaxValue\":84800,\"symbol\":{\"color\":[250,250,250,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$48,600 - 84,800\"},{\"classMaxValue\":121000,\"symbol\":{\"color\":[162,177,191,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$84,800 - 121,000\"},{\"classMaxValue\":200100,\"symbol\":{\"color\":[26,74,120,255],\"style\":\"esriSFSSolid\",\"type\":\"esriSFS\",\"outline\":{\"color\":[191,191,191,220],\"width\":1,\"style\":\"esriSLSSolid\",\"type\":\"esriSLS\"}},\"description\":\"\",\"label\":\"$121,000 - 200,100\"}],\"type\":\"classBreaks\",\"classificationMethod\":\"esriClassifyStandardDeviation\"}},\"clientSubLayerId\":9,\"parentLayerId\":-1}",
+          "popupInfo" : {
+            "type" : "CIMPopupInfo",
+            "title" : "{ST_ABBREV} Block {ID}",
+            "mediaInfos" : [
+              {
+                "type" : "CIMTextMediaInfo",
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "text" : "The median household income here is\u00A0<b><font color='#006400'>${MEDHINC_CY}</font></b>. In comparison, the national median household income is $62,203."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 1,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "MEDIA15_CY",
+                  "MEDIA25_CY",
+                  "MEDIA35_CY",
+                  "MEDIA45_CY",
+                  "MEDIA55_CY",
+                  "MEDIA65_CY",
+                  "MEDIA75_CY"
+                ],
+                "caption" : "Income varies by age. Hover or click chart to view median household income by age of householder."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 2,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A15I0_CY",
+                  "A15I15_CY",
+                  "A15I25_CY",
+                  "A15I35_CY",
+                  "A15I50_CY",
+                  "A15I75_CY",
+                  "A15I100_CY",
+                  "A15I150_CY",
+                  "A15I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 15 to 24)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 3,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A25I0_CY",
+                  "A25I15_CY",
+                  "A25I25_CY",
+                  "A25I35_CY",
+                  "A25I50_CY",
+                  "A25I75_CY",
+                  "A25I100_CY",
+                  "A25I150_CY",
+                  "A25I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 25 to 34)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 4,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A35I15_CY",
+                  "A35I25_CY",
+                  "A35I35_CY",
+                  "A35I50_CY",
+                  "A35I75_CY",
+                  "A35I100_CY",
+                  "A35I150_CY",
+                  "A35I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 35 to 44)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 5,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A45I0_CY",
+                  "A45I15_CY",
+                  "A45I25_CY",
+                  "A45I35_CY",
+                  "A45I50_CY",
+                  "A45I75_CY",
+                  "A45I100_CY",
+                  "A45I150_CY",
+                  "A45I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age of 45 to 54)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 6,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A55I0_CY",
+                  "A55I15_CY",
+                  "A55I25_CY",
+                  "A55I35_CY",
+                  "A55I50_CY",
+                  "A55I75_CY",
+                  "A55I100_CY",
+                  "A55I150_CY",
+                  "A55I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 55 to 64)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 7,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A65I0_CY",
+                  "A65I15_CY",
+                  "A65I25_CY",
+                  "A65I35_CY",
+                  "A65I50_CY",
+                  "A65I75_CY",
+                  "A65I100_CY",
+                  "A65I150_CY",
+                  "A65I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age of 65 to 74)."
+              },
+              {
+                "type" : "CIMColumnChartMediaInfo",
+                "row" : 8,
+                "refreshRateUnit" : "esriTimeUnitsSeconds",
+                "rowSpan" : 1,
+                "columnSpan" : 1,
+                "fields" : [
+                  "A75I0_CY",
+                  "A75I15_CY",
+                  "A75I25_CY",
+                  "A75I35_CY",
+                  "A75I50_CY",
+                  "A75I75_CY",
+                  "A75I100_CY",
+                  "A75I150_CY",
+                  "A75I200_CY"
+                ],
+                "caption" : "Hover or click on chart to view the count of households by income level (Householder age 75 plus)."
+              }
+            ],
+            "gridLayout" : {
+              "type" : "CIMPopupLayout",
+              "columnWidths" : [
+                100
+              ],
+              "borderWidth" : 0,
+              "borderColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  0,
+                  0,
+                  0,
+                  100
+                ]
+              }
+            }
+          },
+          "showPopups" : true
+        }
+      ],
+      "transparentColor" : {
+        "type" : "CIMRGBColor",
+        "values" : [
+          254,
+          254,
+          254,
+          100
+        ]
+      },
+      "backgroundColor" : {
+        "type" : "CIMRGBColor",
+        "values" : [
+          254,
+          254,
+          254,
+          100
+        ]
+      },
+      "imageFormat" : "esriImagePNG32"
+    }
+  ],
+  "elevationSurfaces" : [
+    {
+      "type" : "CIMMapElevationSurface",
+      "elevationMode" : "BaseGlobeSurface",
+      "name" : "Ground",
+      "verticalExaggeration" : 1,
+      "mapElevationID" : "{2B46BDD4-0C18-4370-9EB5-8D302032F2CF}",
+      "color" : {
+        "type" : "CIMRGBColor",
+        "values" : [
+          255,
+          255,
+          255,
+          100
+        ]
+      },
+      "surfaceTINShadingMode" : "Smooth",
+      "visibility" : true,
+      "expanded" : true
+    }
+  ],
+  "rGBColorProfile" : "sRGB IEC61966-2-1 noBPC",
+  "cMYKColorProfile" : "U.S. Web Coated (SWOP) v2"
+}
