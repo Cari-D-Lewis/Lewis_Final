@@ -9,20 +9,25 @@ This README file provides the instructions on how to use this script in ArcGIS P
 .......Prior to running this script.......
 -make a new project in ArcGIS Pro and open the python window
 -download the necessary files (see Needed files and formats) and save them in the ArcGIS Pro Project folder
+-unzip the cb_2018_us_state_5m.zip file to access the U.S. states shapefile
 
-***NOTE: The script called "k_pops_generator.py" is not necessary to run this program, but instead generates a random dataset of genetic clusters to use for making the pies. Currently it generates 5 clusters.***
+    ***NOTE: The script called "k_pops_generator.py" is not necessary to run this program, but instead generates a random dataset of genetic clusters to use for making the pies. Currently it generates 5 clusters.***
 
 
 .......Needed files and formats.......
-1. shapefile ending with .shp
+1. shapefile ending with .shp 
+    (cb_2018_us_state_5m.shp)
 2. text file with the latitude/longitude of the points to be mapped. This file must only have 3 columns: first=ID, second=longitude, third=latitude.
-    
+    (infestations.txt)
+
     ***NOTE: if the latitude and longitude are switched, the points will be in the southern hemisphere***
 
 3. layer file downloaded from ArcGIS Online saved with the extension .lyrx
+    (2020_Median_Household_Income.lyrx)
 4. excel file with the genetic clusters of each infestation. This file must only have 6 columns: first=ID, second through sixth=the proportion of that genetic cluster.
-    
-    ***NOTE: if there are more or less than 5 clusters, the script will need to be modified to include that; this example uses 5***
+    (k_pops_test.xlsx)
+
+    ***NOTE: if there are more or less than 5 clusters, the script will need to be modified to the correct number; this example uses 5***
 
 
 .......Identify the variables.......
